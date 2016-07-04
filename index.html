@@ -26,7 +26,40 @@
         
        
     </head>
-    <body>
+    <body> 
+        
+        <div data-role="page" id="Task-Name-Added" data-title="CAP">
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" style="margin-top: 13px">                
+                    <div style="text-align: center;margin-top: -28px;">
+                        <h1>
+                            <b style="padding: 10px;border: 2px solid #0091c7;border-radius: 23px;font-size: 20px;font-family: verdana;color: #0091c7;">CALENDAR APP</b>
+                            <br/>                    
+                        </h1>
+                    </div>
+                    <a class="ui-btn-left"><i class="icon-th" style="color:#0091c7;"></i></a>
+                    <a class="ui-btn-right"><i class="icon-ellipsis-vert" style="color:#696969;"></i></a>
+            </div>
+            <div role="main" class="ui-content">                
+                <div style="border-bottom:2px solid #dcdcdc;">
+                    <p  style="padding-left: 10px;color:#0091c7;font-family: verdana;font-size: 30px;">ALL</p>
+                </div>
+                <div style="padding: 10px; height: 100%">
+                    
+                    <ul class="ul-listss task-ulist">
+                        <li class="task-list">TODAY<i class="icon-plus" style="float: right;  "></i></li>
+                        <li class="task-list">TOMORROW<i class="icon-plus" style="float: right;"></i></li>
+                        <li class="task-list">THIS WEEK<i class="icon-plus" style="float: right;"></i></li>
+                        <li class="task-list">THIS MONTH<i class="icon-plus" style="float: right;"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="footer" data-theme="a" data-position="fixed" data-tap-toggle="false" style="width: 100%;">
+                <a href="#task_detail" style="float: right"><div class="circle">+</div> </a>                 
+            </div>
+        </div><!-- After Task Name Added -->
+        
+        
+        
         <!-- Welcome Page -->
         <div data-role="page" id="well" data-title="CAP">
             <div role="main" class="ui-content">      
@@ -58,19 +91,11 @@
         
         
         
-        <!-- After Task Name Added -->
-        <div data-role="page" id="After-Task-Name-Added" data-title="CAP">
-            <div role="main" class="ui-content">      
-                <div>
-                    <p style="font-family: verdana;color: #0091c7;">ALL</p>
-                </div>
-            </div>
-        </div>
         
         
-             <!-- pop up -->
+        <!-- pop up -->
         <div data-role="popup" id="task_detail" data-title="CAP">
-            <div role="main" class="ui-content">                
+            <div class="ui-content">                
                 <div style="padding-bottom: 8px;padding-left: 8px;padding-right: 8px;padding-top: 18px; background: #F0F0F0; overflow-y: scroll; overflow-x:hidden;">
                     <div class="box">
                         <div style="margin-top:  -15px;margin-left: 5px;">
@@ -119,6 +144,5 @@
                 </div>               
             </div>
         </div> <!-- pop up -->
-        
     </body>
 </html>

@@ -1,11 +1,12 @@
 .ui-btn-left, .ui-btn-right, .ui-header-fixed {
     top: 0px!important;
+    
 }
 
 .ui-header-fixed .ui-btn-left, .ui-header-fixed .ui-btn-right {
     margin-top: 0!important;
-    font-size: 2em!important;
-    line-height: 2.5em;
+    font-size: 1.5em!important;
+    line-height: 1.5em;
 }
 
 .ui-btn-right.ui-btn, .ui-btn-left.ui-btn {
@@ -128,4 +129,22 @@ h5 {
 
 a {
     text-decoration: none!important;
+}
+
+
+.circle
+{
+width:50px;
+height:50px;
+border-radius:50%;
+font-size:34px;
+font-family: OpenSans-Light;
+color:#fff;
+line-height:49px;
+text-align:center;
+background:#0091c7;
+float:right;
+margin: 10px;
+box-shadow: 6px 3px 5px #b7b7b7;
+text-shadow: 2px 2px 5px red;
 }
