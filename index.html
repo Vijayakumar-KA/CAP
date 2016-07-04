@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CAP</title>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+        <link rel="stylesheet" type="text/css" href="css/libs/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="shortcut icon" href="favicon.jpg" />
+        
+        <link rel="stylesheet" type="text/css" href="css/libs/fontello.css"/>
+        <link rel="stylesheet" type="text/css" href="css/libs/theme.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/libs/jquery.datetimepicker.css" />        
+        <link rel="stylesheet" type="text/css" href="css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        
+        
+        <script type="text/javascript" charset="utf-8" src="js/libs/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/libs/jquery.mobile.router.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/libs/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/libs/jquery.datetimepicker.full.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/router.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/tasks.js"></script>
+        
+        
+       
+    </head>
+    <body>
+        <!-- Welcome Page -->
+        <div data-role="page" id="well" data-title="CAP">
+            <div role="main" class="ui-content">      
+                <div>
+                </div>
+                <div  style="height: 100%; padding: 10px;">
+                    <table style="height: 100%;">
+                            <tr>
+                                <td class="lefft" style="width: 50%;height:128px;font-weight: bold;">ALL</td>
+                                <td style="width: 50%; padding-left: 8px;font-weight: bold;"> PERSONAL</td>
+                            </tr>
+                            <tr>
+                                <td  class="lefft" style="width: 50%; height:128px ;font-weight: bold;">GROCERY LIST</td>
+                                <td style="width: 50%;padding-left: 8px;font-weight: bold;"> WORK</td>
+                            </tr>
+                            <tr>
+                                <td class="lefft" style="width: 50%; height:128px;font-weight: bold;">MOVIES TO WATCH</td>
+                                <td style="width: 50%;padding-left: 8px;font-weight: bold;"> SCHOOL</td>
+                            </tr>
+                            <tr>
+                                <td class="lefft" style="width: 50%; height:128px;font-weight: bold;">PLACES TO VISIT</td>
+                                <td style=" width: 50%; color: #0091c7; font-size: 50px;  padding-left: 5%;font-weight: lighter;">
+                                <a href="#task_detail" data-rel="dialog" data-transition="pop" style=" color: #0091c7;"> + </a></td>
+                            </tr>
+                   </table>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- After Task Name Added -->
+        <div data-role="page" id="After-Task-Name-Added" data-title="CAP">
+            <div role="main" class="ui-content">      
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+             <!-- pop up -->
+        <div data-role="popup" id="task_detail" data-title="CAP">
+            <div role="main" class="ui-content">                
+                <div style="padding-bottom: 8px;padding-left: 8px;padding-right: 8px;padding-top: 18px; background: #F0F0F0; overflow-y: scroll; overflow-x:hidden;">
+                    <div class="box">
+                        <div style="margin-top:  -15px;margin-left: 5px;">
+                            <b style="background: #F0F0F0;"> Start Date & Time </b> </div>
+                            <ul class="ul-listss">
+                                <li class="ui-lists">                                      
+                                        <i class="icon-calendar" style="float: left;"></i>                                        
+                                        <i class="icon-cancel" style="float: right;"></i>                                   
+                                </li>
+                                <li class="ui-lists"><i class="icon-clock" style="float: left;"></i><b>Time</b><i class="icon-cancel" style="float: right;"></i></li>
+                            </ul>                        
+                    </div> 
+                    <div style="height: 20px"></div>
+                    <div class="box">
+                        <div style="margin-top:  -15px;margin-left: 5px;">
+                            <b style="background: #F0F0F0;"> End Date & Time </b> </div>
+                            <ul class="ul-listss">
+                                <li class="ui-lists">
+                                    <i class="icon-calendar" style="float: left;"></i><b>Date</b><i class="icon-cancel" style="float: right;"></i></li>
+                                <li class="ui-lists"><i class="icon-clock" style="float: left;"></i><b>Time</b><i class="icon-cancel" style="float: right;"></i></li>
+                            </ul>                        
+                    </div>
+                    <div style="height: 20px"></div>
+                    <div  style="border-style: solid; border-size: 1px; height: 321px; border-color: #DCDCDC">
+                        <div style="margin-top:  -15px;margin-left: 5px;">
+                            <b style="background: #F0F0F0;"> Task Details </b> </div>                        
+                        <ul class="ul-listss">
+                                <li class="ui-lists"><i class="icon-clipboard" style="float: left;"></i> <b>ASSIGNED TO</b> </li>
+                                <li class="ui-lists"><i class="icon-clipboard" style="float: left;"></i> <b>PRIORITY</b> <i class="icon-angle-down" style="float: right;"></i></li>
+                                <li class="ui-lists"><i class="icon-clipboard" style="float: left;"></i> <b>TYPE OF TASK</b> <i class="icon-angle-down" style="float: right;"></i></li>
+                                <li class="ui-lists"><i class="icon-clipboard" style="float: left;"></i> <b>SUBJECT</b> <i class="icon-angle-down" style="float: right;"></i></li>
+                                <li class="ui-lists" style="height: 93px;"><i class="icon-clipboard" style="float: left;"></i> <b>DESCRIPTION</b>                                    
+                                </li>
+                                <li class="ui-lists"><i class="icon-clipboard" style="float: left;"></i> <b>STATUS</b> <i class="icon-angle-down" style="float: right;"></i></li>
+                        </ul>                                            
+                    </div> 
+                    <br>
+                    <div>                        
+                        <table>
+                            <tr style="width: 100%;">
+                                <td style="width: 50%;"><input type="submit" data-role="none" value="CANCEL" class="pop-up-botton btn-cancel"/></td>                                
+                                <td style="width: 50%;"><input type="submit" data-role="none" value="SAVE" class="pop-up-botton btn-save"/></td>
+                            </tr>                            
+                        </table>
+                    </div> 
+                </div>               
+            </div>
+        </div> <!-- pop up -->
+        
+    </body>
+</html>
