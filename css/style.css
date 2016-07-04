@@ -66,4 +66,11 @@
 /**** Task-Name-Added-css ****/
 
 .task-list{height: 35px;padding-right: 15px;}
-.task-ulist{color:#0091c7;font-family: verdana;font-size: 20px; float: left; width: 100%}
+.task-ulist{
+    color:#0091c7;
+    font-family: verdana;
+    font-size: 20px;
+    float: left;
+    width: 100%
+}
+
