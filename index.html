@@ -26,47 +26,29 @@
          
         <script type="text/javascript" charset="utf-8" src="js/router.js"></script>
         <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-        <script type="text/javascript" charset="utf-8" src="js/tasks.js"></script>
-                
-        
-          
-        
-       
-        <script>
-                              
-        </script>   
-        
+        <script type="text/javascript" charset="utf-8" src="js/tasks.js"></script>            
     </head>
     <body>         
         <!-- Welcome Page -->
-        <div data-role="page" id="well" data-title="CAP">
-            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" style="background: #fff;">                
-                
-                <div>                   
-                    <a class="ui-btn-left" style="float: left"><i class="icon-th" style="color:#0091c7;height: 100%;"></i></a>                                                   
-                     <center><b class="cap">CALENDAR APP</b></center>                                         
-                    <a class="ui-btn-right" style="float: left"><i class="icon-ellipsis-vert" style="color:#696969;"></i></a>
-                </div>
-                <div style="clear: both"></div>
-            </div>
+        <div data-role="page" id="well" data-title="CAP">           
             <div role="main" class="ui-content">              
                 <div  style="height: 100%; padding: 10px;">
                     <table style="height: 100%;">
                             <tr>
-                                <td class="lefft" style="width: 50%;height:128px;font-weight: bold;"><a href="#Task-Name-Added" style="color: #0091c7">ALL</a></td>
-                                <td style="width: 50%; padding-left: 8px;font-weight: bold;"> PERSONAL</td>
+                                <td class="lefft td-width"><a href="#Task-Name-Added" style="color: #0098ca">ALL</a></td>
+                                <td class="td-width-rt"><a href="#Task-Name-Added" style="color: #0098ca"> PERSONAL</a></td>
                             </tr>
                             <tr>
-                                <td  class="lefft" style="width: 50%; height:128px ;font-weight: bold;">GROCERY LIST</td>
-                                <td style="width: 50%;padding-left: 8px;font-weight: bold;"> WORK</td>
+                                <td  class="lefft td-width"><a href="#Task-Name-Added" style="color: #0098ca">GROCERY LIST</a></td>
+                                <td class="td-width-rt"><a href="#Task-Name-Added" style="color: #0098ca"> WORK</a></td>
                             </tr>
                             <tr>
-                                <td class="lefft" style="width: 50%; height:128px;font-weight: bold;">MOVIES TO WATCH</td>
-                                <td style="width: 50%;padding-left: 8px;font-weight: bold;"> SCHOOL</td>
+                                <td class="lefft td-width"><a href="#Task-Name-Added" style="color: #0098ca">MOVIES TO WATCH</a></td>
+                                <td class="td-width-rt"><a href="#Task-Name-Added" style="color: #0098ca"> SCHOOL</a></td>
                             </tr>
                             <tr>
-                                <td class="lefft" style="width: 50%; height:128px;font-weight: bold;">PLACES TO VISIT</td>
-                                <td style=" width: 50%; color: #0091c7; font-size: 50px;  padding-left: 5%;font-weight: lighter;">
+                                <td class="lefft td-width"><a href="#Task-Name-Added" style="color: #0098ca">PLACES TO VISIT</a></td>
+                                <td class="td-width-x">
                                 <a href="#task_detail" data-rel="dialog" data-transition="pop" style=" font-size: 65px;color: #0091c7; font-family: OpenSans-Light;font-weight: lighter;"> + </a></td>
                             </tr>
                    </table>
@@ -78,15 +60,14 @@
         
         <!-- After Task Name Added-->
         <div data-role="page" id="Task-Name-Added" data-title="CAP">
-            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" style="margin-top: 13px">                
-                    <div style="text-align: center;margin-top: -28px;">
-                        <h1>
-                            <b style="padding: 10px;border: 2px solid #0091c7;border-radius: 23px;font-size: 20px;font-family: verdana;color: #0091c7;">CALENDAR APP</b>
-                            <br/>                    
-                        </h1>
-                    </div>
-                    <a class="ui-btn-left"><i class="icon-th" style="color:#0091c7;"></i></a>
+             <div data-role="header"  data-position="fixed" data-tap-toggle="false" style="background: #fff;">                                
+                <div style="clear: both"></div>               
+                <div>                   
+                    <a class="ui-btn-left" style="float: left"><i class="icon-th" style="color:#0098ca;height: 100%;"></i></a>                                                   
+                     <center style="margin: 13px;"><b class="cap">CALENDAR APP</b></center>                                         
                     <a class="ui-btn-right"><i class="icon-ellipsis-vert" style="color:#696969;"></i></a>
+                </div>
+                <div style="clear: both"></div>
             </div>
             <div role="main" class="ui-content">
                 <div>
@@ -107,14 +88,6 @@
                 <a href="#task_detail" style="float: right"><div class="circle">+</div> </a>                 
             </div>
         </div><!-- After Task Name Added-->
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         
@@ -145,17 +118,16 @@
                             </ul>                        
                     </div>
                     <div style="height: 20px"></div>
-                    <div  style="border-style: solid; border-size: 1px; height: 321px; border-color: #DCDCDC">
+                    <div  class="task-border">
                         <div style="margin-top:  -15px;margin-left: 5px;">
                             <b style="background: #F0F0F0;"> Task Details </b> </div>                        
                         <ul class="ul-listss">
-                                <li class="ui-lists"><i class="icon-clipboard" style="float: left;"></i> <b>ASSIGNED TO</b> </li>
-                                <li class="ui-lists"><i class="icon-clipboard" style="float: left;"></i> <b>PRIORITY</b> <i class="icon-angle-down" style="float: right;"></i></li>
-                                <li class="ui-lists"><i class="icon-clipboard" style="float: left;"></i> <b>TYPE OF TASK</b> <i class="icon-angle-down" style="float: right;"></i></li>
-                                <li class="ui-lists"><i class="icon-clipboard" style="float: left;"></i> <b>SUBJECT</b> <i class="icon-angle-down" style="float: right;"></i></li>
-                                <li class="ui-lists" style="height: 93px;"><i class="icon-clipboard" style="float: left;"></i> <b>DESCRIPTION</b>                                    
-                                </li>
-                                <li class="ui-lists"><i class="icon-clipboard" style="float: left;"></i> <b>STATUS</b> <i class="icon-angle-down" style="float: right;"></i></li>
+                            <li class="ui-lists"><a href="#" style="color: #111;"><div><i class="icon-clipboard"></i><b style="width: 100%">ASSIGNED TO</b> <i class="icon-angle-down" id="float-right"></i></div></a></li>
+                            <li class="ui-lists"><a href="#" style="color: #111;"><div><i class="icon-clipboard"></i><b style="width: 100%">PRIORITY</b> <i class="icon-angle-down" id="float-right"></i></div></a></li>
+                            <li class="ui-lists"><a href="#" style="color: #111;"><div><i class="icon-clipboard"></i><b style="width: 100%">TYPE OF TASK</b> <i class="icon-angle-down" id="float-right"></i></div></a></li>
+                            <li class="ui-lists"><a href="#" style="color: #111;"><div><i class="icon-clipboard"></i><b style="width: 100%">SUBJECT</b> <i class="icon-angle-down" id="float-right"></i></div></a></li>
+                            <li class="ui-lists" style="height: 93px;"><i class="icon-clipboard"></i> <b>DESCRIPTION</b></li>
+                            <li class="ui-lists"><a href="#" style="color: #111;"><div><i class="icon-clipboard"></i><b style="width: 100%">STATUS</b> <i class="icon-angle-down" id="float-right"></i></div></a></li>
                         </ul>                                            
                     </div> 
                     <br>
