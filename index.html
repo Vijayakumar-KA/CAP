@@ -14,15 +14,10 @@
         <link rel="stylesheet" type="text/css" href="css/common.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
         
-      
-        
-        
-        
         <script type="text/javascript" charset="utf-8" src="js/libs/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/libs/jquery.mobile.router.min.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/libs/jquery.mobile-1.4.5.min.js"></script>
-        <script type="text/javascript" charset="utf-8" src="js/libs/jquery.datetimepicker.full.min.js"></script>
-         
+        <script type="text/javascript" charset="utf-8" src="js/libs/jquery.datetimepicker.full.min.js"></script>         
          
         <script type="text/javascript" charset="utf-8" src="js/router.js"></script>
         <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
@@ -30,7 +25,18 @@
     </head>
     <body>         
         <!-- Welcome Page -->
-        <div data-role="page" id="well" data-title="CAP">           
+        <div data-role="page" id="well" data-title="CAP">
+            <div data-role="header"  data-position="fixed" data-tap-toggle="false" style="background: #fff; height: 118px !important">                                
+                <div style="clear: both"></div>               
+                <div style="">                   
+                    <a class="ui-btn-left" style="float: left;"><strong>Hi</strong><br> John</a>
+                    <div>
+                       <a class="ui-head" style="float: right;"><i class="icon-ellipsis-vert" style="color:#696969;"></i></a>
+                       <a class="ui-head" style="float: right;"><i class="icon-comment" style="color:#696969;"></i></a> 
+                    </div>                    
+                </div>                
+            </div>
+            <div style="clear: both"></div>            
             <div role="main" class="ui-content">              
                 <div  style="height: 100%; padding: 10px;">
                     <table style="height: 100%;">
@@ -47,7 +53,7 @@
                                 <td class="td-width-rt"><a href="#Task-Name-Added" style="color: #0098ca"> SCHOOL</a></td>
                             </tr>
                             <tr>
-                                <td class="lefft td-width"><a href="#Task-Name-Added" style="color: #0098ca">PLACES TO VISIT</a></td>
+                                <td class="lefft td-width" style="border-bottom: none"><a href="#Task-Name-Added" style="color: #0098ca">PLACES TO VISIT</a></td>
                                 <td class="td-width-x">
                                 <a href="#task_detail" data-rel="dialog" data-transition="pop" style=" font-size: 65px;color: #0091c7; font-family: OpenSans-Light;font-weight: lighter;"> + </a></td>
                             </tr>
@@ -63,7 +69,7 @@
              <div data-role="header"  data-position="fixed" data-tap-toggle="false" style="background: #fff;">                                
                 <div style="clear: both"></div>               
                 <div>                   
-                    <a class="ui-btn-left" style="float: left"><i class="icon-th" style="color:#0098ca;height: 100%;"></i></a>                                                   
+                    <a href="#well" class="ui-btn-left" style="float: left"><i class="icon-th" style="color:#0098ca;height: 100%;"></i></a>                                                   
                      <center style="margin: 13px;"><b class="cap">CALENDAR APP</b></center>                                         
                     <a class="ui-btn-right"><i class="icon-ellipsis-vert" style="color:#696969;"></i></a>
                 </div>
@@ -76,7 +82,7 @@
                     </div>
                 <div>                      
                     <ul class="ul-listss task-ulist">
-                        <li class="task-list" >TODAY<i class="icon-plus" style="float: right;  "></i></li>                   
+                        <li class="task-list" >TODAY<i class="icon-plus" style="float:right;"></i></li>                   
                         <li class="task-list">TOMORROW<i class="icon-plus" style="float: right;"></i></li>
                         <li class="task-list">THIS WEEK<i class="icon-plus" style="float: right;"></i></li>
                         <li class="task-list">THIS MONTH<i class="icon-plus" style="float: right;"></i></li>
@@ -145,6 +151,5 @@
         </div> <!-- pop up -->
         
         
-    </body>
-    
+    </body>    
 </html>
