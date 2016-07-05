@@ -14,20 +14,37 @@
         <link rel="stylesheet" type="text/css" href="css/common.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
         
+      
+        
+        
         
         <script type="text/javascript" charset="utf-8" src="js/libs/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/libs/jquery.mobile.router.min.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/libs/jquery.mobile-1.4.5.min.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/libs/jquery.datetimepicker.full.min.js"></script>
+         
+         
         <script type="text/javascript" charset="utf-8" src="js/router.js"></script>
         <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/tasks.js"></script>
+                
         
+          
         
        
+        <script>
+            $(function() {
+              $( "#accordion" ).accordion({
+                collapsible: true
+              });
+            });
+            
+           
+        </script>       
     </head>
     <body> 
         
+        <!-- After Task Name Added-->
         <div data-role="page" id="Task-Name-Added" data-title="CAP">
             <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" style="margin-top: 13px">                
                     <div style="text-align: center;margin-top: -28px;">
@@ -44,7 +61,7 @@
                     <div style="border-bottom:2px solid #dcdcdc;">
                         <p><b style="padding-left: 10px;color:#0091c7;font-family: verdana;font-size: 30px; font-weight: lighter">ALL</b></p>
                     </div>
-                <div>   
+                <div>                      
                     <ul class="ul-listss task-ulist">
                         <li class="task-list" >TODAY<i class="icon-plus" style="float: right;  "></i></li>                   
                         <li class="task-list">TOMORROW<i class="icon-plus" style="float: right;"></i></li>
@@ -61,15 +78,27 @@
         
         
         
+        
+        
         <!-- Welcome Page -->
         <div data-role="page" id="well" data-title="CAP">
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" style="margin-top: 13px">                
+                    <div style="text-align: center;margin-top: -28px;">
+                        <h1>
+                            <b style="padding: 10px;border: 2px solid #0091c7;border-radius: 23px;font-size: 20px;font-family: verdana;color: #0091c7;">CALENDAR APP</b>
+                            <br/>                    
+                        </h1>
+                    </div>
+                    <a class="ui-btn-left"><i class="icon-th" style="color:#0091c7;"></i></a>
+                    <a class="ui-btn-right"><i class="icon-ellipsis-vert" style="color:#696969;"></i></a>
+            </div>
             <div role="main" class="ui-content">      
                 <div>
                 </div>
                 <div  style="height: 100%; padding: 10px;">
                     <table style="height: 100%;">
                             <tr>
-                                <td class="lefft" style="width: 50%;height:128px;font-weight: bold;">ALL</td>
+                                <td class="lefft" style="width: 50%;height:128px;font-weight: bold;"><a href="#Task-Name-Added">ALL</a></td>
                                 <td style="width: 50%; padding-left: 8px;font-weight: bold;"> PERSONAL</td>
                             </tr>
                             <tr>
@@ -94,8 +123,9 @@
         
         
         
+        
         <!-- pop up -->
-        <div data-role="popup" id="task_detail" data-title="CAP">
+        <div data-role="page" id="task_detail" data-title="CAP">
             <div class="ui-content">                
                 <div style="padding-bottom: 8px;padding-left: 8px;padding-right: 8px;padding-top: 18px; background: #F0F0F0; overflow-y: scroll; overflow-x:hidden;">
                     <div class="box">
@@ -137,14 +167,17 @@
                     <div>                        
                         <table>
                             <tr style="width: 100%;">
-                                <td style="width: 50%;"><input type="submit" data-role="none" value="CANCEL" class="pop-up-botton btn-cancel"/></td>                                
-                                <td style="width: 50%;"><input type="submit" data-role="none" value="SAVE" class="pop-up-botton btn-save"/></td>
+                                <td style="width: 50%;"><a data-rel="back"><input type="submit" data-role="none" value="CANCEL" class="pop-up-botton btn-cancel"/></a></td>                                
+                                <td style="width: 50%;"><a><input type="submit" data-role="none" value="SAVE" class="pop-up-botton btn-save"/></a></td>
                             </tr>                            
                         </table>
                     </div> 
+                    
                 </div>               
             </div>
         </div> <!-- pop up -->
+        
+        
     </body>
     
 </html>
