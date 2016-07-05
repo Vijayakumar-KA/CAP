@@ -21,18 +21,23 @@
          
         <script type="text/javascript" charset="utf-8" src="js/router.js"></script>
         <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-        <script type="text/javascript" charset="utf-8" src="js/tasks.js"></script>            
+        <script type="text/javascript" charset="utf-8" src="js/tasks.js"></script>  
+        
+        
+        
+
     </head>
-    <body>         
+    <body>
+        
         <!-- Welcome Page -->
         <div data-role="page" id="well" data-title="CAP">
             <div data-role="header"  data-position="fixed" data-tap-toggle="false" style="background: #fff; height: 118px !important">                                
                 <div style="clear: both"></div>               
                 <div style="">                   
-                    <a class="ui-btn-left" style="float: left;"><strong>Hi</strong><br> John</a>
+                    <a class="ui-btn-left" style="float: left; "><strong>Hi</strong><br> John</a>
                     <div>
-                       <a class="ui-head" style="float: right;"><i class="icon-ellipsis-vert" style="color:#696969;"></i></a>
-                       <a class="ui-head" style="float: right;"><i class="icon-comment" style="color:#696969;"></i></a> 
+                       <a class="ui-head" style="float: right; width: 34px;"><i class="icon-ellipsis-vert" style="color:#696969;"></i></a>
+                       <a class="ui-head" style="float: right; width: 34px;"><i class="icon-comment" style="color:#696969;"></i></a> 
                     </div>                    
                 </div>                
             </div>
@@ -60,8 +65,7 @@
                    </table>
                 </div>
             </div>
-        </div>
-        
+        </div>        
         
         
         <!-- After Task Name Added-->
@@ -69,8 +73,8 @@
              <div data-role="header"  data-position="fixed" data-tap-toggle="false" style="background: #fff;">                                
                 <div style="clear: both"></div>               
                 <div>                   
-                    <a href="#well" class="ui-btn-left" style="float: left"><i class="icon-th" style="color:#0098ca;height: 100%;"></i></a>                                                   
-                     <center style="margin: 13px;"><b class="cap">CALENDAR APP</b></center>                                         
+                    <a href="#well" class="ui-btn-left" style="float: left;"><i class="icon-th" style="color:#0098ca;height: 100%;"></i></a>                                                   
+                     <center style="margin: 7px;"><b class="cap">CALENDAR APP</b></center>                                         
                     <a class="ui-btn-right"><i class="icon-ellipsis-vert" style="color:#696969;"></i></a>
                 </div>
                 <div style="clear: both"></div>
@@ -91,7 +95,7 @@
                 </div>
             </div>
             <div data-role="footer" data-theme="a" data-position="fixed" data-tap-toggle="false" style="width: 100%;">
-                <a href="#task_detail" style="float: right"><div class="circle">+</div> </a>                 
+                <a href="#task_detail" data-rel="dialog" data-transition="pop" style="float: right"><div class="circle">+</div> </a>                 
             </div>
         </div><!-- After Task Name Added-->
         
@@ -99,7 +103,7 @@
         
         
         <!-- pop up -->
-        <div data-role="page" id="task_detail" data-title="CAP">
+        <div data-role="popup" id="task_detail" data-title="CAP">
             <div class="ui-content">                
                 <div style="padding-bottom: 8px;padding-left: 8px;padding-right: 8px;padding-top: 18px; background: #F0F0F0; overflow-y: scroll; overflow-x:hidden;">
                     <div class="box">
