@@ -60,10 +60,10 @@
                             <tr>
                                 <td class="lefft td-width" style="border-bottom: none"><a href="#Task-Name-Added" style="color: #0098ca">PLACES TO VISIT</a></td>
                                 <td class="td-width-x">
-                                <a href="#task_detail" data-rel="dialog" data-transition="pop" style=" font-size: 65px;color: #0091c7; font-family: OpenSans-Light;font-weight: lighter;"> + </a></td>
+                                <a href="#task_detail" data-rel="dialog" data-transition="pop" id="plus" class="button"> + </a></td>
                             </tr>
-                   </table>
-                </div>
+                   </table>                    
+                </div>                
             </div>
         </div>        
         
@@ -82,9 +82,9 @@
             <div role="main" class="ui-content">
                 <div>
                     <div style="border-bottom:2px solid #dcdcdc;">
-                        <p><b style="padding-left: 10px;color:#0091c7;font-family: verdana;font-size: 30px; font-weight: lighter">ALL</b></p>
+                        <p><b id="all" style="">ALL</b></p>
                     </div>
-                <div>                      
+                <div>
                     <ul class="ul-listss task-ulist">
                         <li class="task-list" >TODAY<i class="icon-plus" style="float:right;"></i></li>                   
                         <li class="task-list">TOMORROW<i class="icon-plus" style="float: right;"></i></li>
@@ -104,8 +104,8 @@
         
         <!-- pop up -->
         <div data-role="popup" id="task_detail" data-title="CAP">
-            <div class="ui-content">                
-                <div style="padding-bottom: 8px;padding-left: 8px;padding-right: 8px;padding-top: 18px; background: #F0F0F0; overflow-y: scroll; overflow-x:hidden;">
+            <div class="ui-content overlay popup" style="opacity: 1;">                
+                <div style="padding-bottom: 8px;padding-left: 8px;padding-right: 8px;padding-top: 18px; background: #F0F0F0;">
                     <div class="box">
                         <div style="margin-top:  -15px;margin-left: 5px;">
                             <b style="background: #F0F0F0;"> Start Date & Time </b> </div>
@@ -138,18 +138,17 @@
                             <li class="ui-lists"><a href="#" style="color: #111;"><div><i class="icon-clipboard"></i><b style="width: 100%">SUBJECT</b> <i class="icon-angle-down" id="float-right"></i></div></a></li>
                             <li class="ui-lists" style="height: 93px;"><i class="icon-clipboard"></i> <b>DESCRIPTION</b></li>
                             <li class="ui-lists"><a href="#" style="color: #111;"><div><i class="icon-clipboard"></i><b style="width: 100%">STATUS</b> <i class="icon-angle-down" id="float-right"></i></div></a></li>
-                        </ul>                                            
-                    </div> 
+                        </ul>
+                    </div>                     
                     <br>
                     <div>                        
                         <table>
                             <tr style="width: 100%;">
                                 <td style="width: 50%;"><a data-rel="back"><input type="submit" data-role="none" value="CANCEL" class="pop-up-botton btn-cancel"/></a></td>                                
-                                <td style="width: 50%;"><a><input type="submit" data-role="none" value="SAVE" class="pop-up-botton btn-save"/></a></td>
+                                <td style="width: 50%;"><input type="submit" data-role="none" value="SAVE" class="pop-up-botton btn-save"/></td>
                             </tr>                            
                         </table>
-                    </div> 
-                    
+                    </div>                     
                 </div>               
             </div>
         </div> <!-- pop up -->
