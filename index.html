@@ -22,6 +22,7 @@
         <script type="text/javascript" charset="utf-8" src="js/router.js"></script>
         <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/tasks.js"></script>  
+        <script type="text/javascript" charset="utf-8" src="js/popup.js"></script>
         
         
         
@@ -60,12 +61,8 @@
                             <tr>
                                 <td class="lefft td-width" style="border-bottom: none"><a href="#Task-Name-Added" style="color: #0098ca">PLACES TO VISIT</a></td>
                                 <td class="td-width-x">
-                                <a href="#task_detail" data-rel="dialog" data-transition="pop" id="plus" class="button"> + </a></td>
-                            </tr>
-                            GitHub:
-UserName: Vijayakumar-KA
-mail ID: k.viji46@gmail.com
-Password: AKV-github46
+                                <a href="#task_detail" data-modal-id="popup" id="plus" class="button"> + </a></td>
+                            </tr>                            
                    </table>                    
                 </div>                
             </div>
@@ -107,7 +104,7 @@ Password: AKV-github46
         
         
         <!-- pop up -->
-        <div data-role="popup" id="task_detail" data-title="CAP">
+        <div data-role="popup" data-title="CAP" class="modal-box">
             <div class="ui-content overlay popup" style="opacity: 1;">                
                 <div style="padding-bottom: 8px;padding-left: 8px;padding-right: 8px;padding-top: 18px; background: #F0F0F0;">
                     <div class="box">
@@ -148,7 +145,7 @@ Password: AKV-github46
                     <div>                        
                         <table>
                             <tr style="width: 100%;">
-                                <td style="width: 50%;"><a data-rel="back"><input type="submit" data-role="none" value="CANCEL" class="pop-up-botton btn-cancel"/></a></td>                                
+                                <td style="width: 50%;"><a data-rel="back"><input type="submit" data-rel="back" data-role="none" value="CANCEL" class="pop-up-botton btn-cancel"/></a></td>                                
                                 <td style="width: 50%;"><input type="submit" data-role="none" value="SAVE" class="pop-up-botton btn-save"/></td>
                             </tr>                            
                         </table>
